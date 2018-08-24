@@ -1,0 +1,4 @@
+CXX_STD = CXX17
+PKG_CPPFLAGS += -I../inst/include -fsanitize=address
+PKG_CFLAGS += -fno-omit-frame-pointer -Wall -pedantic -O3 -mavx2
+PKG_LIBS += -lasan -lubsan
